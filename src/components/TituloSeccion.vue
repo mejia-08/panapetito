@@ -14,7 +14,7 @@ defineProps({
 
 h1 {
     font-size: 2rem;
-    padding: 1rem;
+    padding-bottom: 1rem;
     text-transform: capitalize;
 }
 
@@ -23,7 +23,7 @@ h1 {
         text-align: center;
         font-size: 2.5rem;
         color: #f68712;
-        
+
     }
 }
 

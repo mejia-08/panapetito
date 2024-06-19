@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="logo">
-            <img src="/logo.svg" alt="logo">
+            <img src="/logo.svg" alt="Logo"/>
         </div>
         <nav class="menu">
             <ul>
@@ -43,7 +43,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        font-weight: 500;text-shadow: 1px 1px 3px #202020;
+        font-weight: 500;
+        text-shadow: 1px 1px 3px #202020;
     }
     .logo{
         min-width: 40px;
@@ -78,7 +79,7 @@ img{
     border-radius: 15px;
 
     &:hover{
-        background-color: #61370a
+        background-color: #61370a;
     }
 }
 @media ( max-width:768px){

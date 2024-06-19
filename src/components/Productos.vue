@@ -3,7 +3,7 @@
         <Titulo :titulo="props.categoria" />
         <div class="productos">
             <div class="producto" v-for="producto in productos" :key="producto.id">
-                <img class="foto" :src="`/imagenes/${producto.imagen}`" alt="Producto">
+                <img class="foto" :src="`/imagenes/${producto.imagen}`" alt="Producto"/>
                 <div class="informacion">
                     <h3 class="titulo">
                         {{ producto.producto }}
@@ -30,9 +30,9 @@ const props = defineProps({
     categoria: String,
 });
 
-const producto = ref ([]);
+const productos = ref ([]);
 
 watchEffect(() => {
-    productos.value = ListaProductos.filter((producto) => producto.categoria === props.categoria );
+    productos.value = listaProductos.filter((producto) => producto.categoria === props.categoria );
 });
 </script>
